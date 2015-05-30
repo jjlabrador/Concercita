@@ -1,4 +1,4 @@
-package dir.concercita
+package dir.concercita;
 
 import static org.junit.Assert.*;
 
