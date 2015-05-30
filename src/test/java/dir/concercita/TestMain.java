@@ -8,7 +8,7 @@ import org.junit.Test;
 public class TestMain {
 
 	@Test
-	public void test() {
+	public void TestMain() {
 		return("Not yet implemented");
 	}
 
