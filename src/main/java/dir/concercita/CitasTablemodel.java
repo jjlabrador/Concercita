@@ -12,7 +12,7 @@ public class CitasTablemodel implements TableModel {
 
 	private TableModelListener listener;
 	
-	// El ResultSet guardar· todo el contenido de la consulta.
+	// El ResultSet guardar√° todo el contenido de la consulta.
 	private ResultSet resultado;
 	
 	public CitasTablemodel(Connection conex){

@@ -138,7 +138,7 @@ public class ModificarDialog extends JDialog {
 		try {
 			sentencia = conexion.createStatement();
 			sentencia.executeUpdate(consulta);
-			//Esgtablecemos el atributo de ConcercitaForm a true para que muestre el mensaje de confirmación.
+			//Esgtablecemos el atributo de ConcercitaForm a true para que muestre el mensaje de confirmaciÃ³n.
 			ConcercitaForm.modificado = true;
 			dispose();
 		} catch (SQLException e1) {

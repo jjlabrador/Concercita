@@ -145,7 +145,7 @@ public class ConcercitaForm extends JFrame implements Citas{
 					JOptionPane.ERROR_MESSAGE);
 		} catch (SQLException e2){
 			JOptionPane.showMessageDialog(this, "No se puede conectar con la base de datos " + e2.toString(), 
-					"Error de conexión", JOptionPane.ERROR_MESSAGE);
+					"Error de conexiÃ³n", JOptionPane.ERROR_MESSAGE);
 		}
 	}
 	
@@ -153,7 +153,7 @@ public class ConcercitaForm extends JFrame implements Citas{
 		try{
 			conexion.close();
 		}catch(SQLException e4){
-			JOptionPane.showMessageDialog(this, "No se pudo cerrar la conexión", 
+			JOptionPane.showMessageDialog(this, "No se pudo cerrar la conexiÃ³n", 
 					"Error", JOptionPane.ERROR_MESSAGE);
 		}
 	}
@@ -174,18 +174,18 @@ public class ConcercitaForm extends JFrame implements Citas{
 			try {
 				Statement sentencia = conexion.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, 
 						ResultSet.CONCUR_READ_ONLY);
-				//Ejecutamos la consulta de selección y recuperamos los datos del registro.
+				//Ejecutamos la consulta de selecciÃ³n y recuperamos los datos del registro.
 				ResultSet resultado = sentencia.executeQuery(consulta);
 				//colocamos el puntero antes del primer registro.
 				resultado.beforeFirst();
 				if (resultado.next()){
-					//Si el registro no está vacio instanciamos el formulario de modificación
-					//pasándole como parametros la conexión y el ResultSet apuntando ya al primer y único registro.
+					//Si el registro no estÃ¡ vacio instanciamos el formulario de modificaciÃ³n
+					//pasÃ¡ndole como parametros la conexiÃ³n y el ResultSet apuntando ya al primer y Ãºnico registro.
 					ModificarDialog m = new ModificarDialog(conexion, resultado);
 					m.setVisible(true);
-					//Si realmente se modificó la cita se mostrará el mensaje de confirmación.
+					//Si realmente se modificÃ³ la cita se mostrarÃ¡ el mensaje de confirmaciÃ³n.
 					if (modificado){
-						JOptionPane.showMessageDialog(this, "La cita se modificó correctamente", 
+						JOptionPane.showMessageDialog(this, "La cita se modificÃ³ correctamente", 
 								"Modificar Registro", JOptionPane.INFORMATION_MESSAGE);
 						modificado = false;
 					}
@@ -208,7 +208,7 @@ public class ConcercitaForm extends JFrame implements Citas{
 			try { 
 				Statement sentencia = conexion.createStatement();
 				if (sentencia.executeUpdate(consulta) > 0){
-					JOptionPane.showMessageDialog(this, "La cita se eliminó correctamente", 
+					JOptionPane.showMessageDialog(this, "La cita se eliminÃ³ correctamente", 
 							"Eliminar Registro", JOptionPane.INFORMATION_MESSAGE);
 				}else{
 					JOptionPane.showMessageDialog(this, "El identificador no existe", 
