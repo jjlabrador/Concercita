@@ -1,10 +1,6 @@
-//import static org.junit.Assert.*;
+import static org.junit.Assert.*;
 
-<<<<<<< HEAD
-import static org.junit.Test;
-=======
-//import org.junit.Test;
->>>>>>> parent of de188e2... Cambios en Testfile
+import org.junit.Test;
 
 
 public class TestMain {
