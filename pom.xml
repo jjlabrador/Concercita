@@ -10,6 +10,12 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
+  <dependency>
+	<groupId>junit</groupId>
+	<artifactId>junit-dep</artifactId>
+	<version>4.8.1</version>
+</dependency>
+
     <reporting>
         <plugins>
             <plugin>
