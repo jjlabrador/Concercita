@@ -1,12 +1,12 @@
-//import static org.junit.Assert.*;
+import static org.junit.Assert.*;
 
-//import org.junit.Test;
+import org.junit.Test;
 
 
 public class TestMain {
 
 	@Test
-	public string test() {
+	public String test() {
 		return("Not yet implemented");
 	}
 
