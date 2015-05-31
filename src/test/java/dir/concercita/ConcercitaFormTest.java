@@ -6,10 +6,13 @@ import org.junit.Before;
 import dir.concercita.ConcercitaForm;
 
 public class ConcercitaFormTest {
-
+	
+	ConcercitaForm form;
+	
 	@Test
 	public void setUp() {
-		new ConcercitaForm().setVisible(true);
+		form = new ConcercitaForm();
+		form.setVisible(true);
 		assertTrue(1 == 1); 
 	}
 
