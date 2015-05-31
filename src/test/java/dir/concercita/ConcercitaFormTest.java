@@ -11,7 +11,7 @@ public class ConcercitaFormTest {
 	
 	@Test
 	public void setUp() {
-		form = new ConcercitaForm();
+		//form = new ConcercitaForm();
 		//form.setVisible(true);
 		assertTrue(1 == 1); 
 	}
