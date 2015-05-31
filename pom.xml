@@ -88,11 +88,34 @@
   </properties>
 	<dependencies>
 		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit-dep</artifactId>
-			<version>4.8.1</version>
+		  <groupId>org.apache.maven.plugins</groupId>
+		  <artifactId>maven-compiler-plugin</artifactId>
+		  <version>3.3</version>
+		  <type>maven-plugin</type>
 		</dependency>
-	</dependencies>
+		<dependency>
+		  <groupId>junit</groupId>
+		  <artifactId>junit</artifactId>
+		  <version>4.12</version>
+		  <scope>test</scope>
+		</dependency>
+		<dependency>
+		  <groupId>org.apache.directory.studio</groupId>
+		  <artifactId>org.slf4j.api</artifactId>
+		  <version>1.6.1</version>
+		</dependency>
+		<dependency>
+		  <groupId>org.slf4j</groupId>
+		  <artifactId>slf4j-jdk14</artifactId>
+		  <version>1.6.1</version>
+		</dependency>
+		<dependency>
+		  <groupId>org.slf4j</groupId>
+		  <artifactId>slf4j-nop</artifactId>
+		  <version>1.6.1</version>
+		</dependency>
+
+		</dependency>
     <reporting>
         <plugins>
             <plugin>
