@@ -61,6 +61,24 @@
                 <artifactId>maven-checkstyle-plugin</artifactId>
                 <version>2.6</version>
             </plugin>
+			      </plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<configuration>
+				  <archive>
+					<manifest>
+					  <addClasspath>true</addClasspath>
+					  <classpathPrefix>lib/</classpathPrefix>
+					  <mainClass>dir.concercita.Main</mainClass>
+					</manifest>
+					<manifestEntries>
+					  <Class-Path>.</Class-Path>
+					</manifestEntries>
+				  </archive>
+				  <finalName>concercita</finalName>
+				</configuration>
+			</plugin>
         </plugins>
     </reporting>
 </project>
