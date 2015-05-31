@@ -7,7 +7,7 @@ import dir.concercita.ConcercitaForm;
 
 public class ConcercitaFormTest {
 
-	@Before
+	@Test
 	public void setUp() {
 		new ConcercitaForm().setVisible(true);
 		assertTrue(1 == 1); 
